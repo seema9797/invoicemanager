@@ -44,7 +44,7 @@ const SidebarContent = props => {
           </Link>
         </li>
         <li>
-          <Link to="/leadManagement" className=" waves-effect">
+          <Link to="/Quotations" className=" waves-effect">
             <i className="ti-calendar"></i>
             <span>Quotations</span>
           </Link>

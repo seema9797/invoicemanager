@@ -1,10 +1,18 @@
 import React,{useState,useEffect} from 'react'
-import {Card,Container,Row,Col} from 'react-bootstrap';
+import {Container,Button} from 'react-bootstrap';
+import { Row, Col, Card, CardBody } from "reactstrap";
 import './Qutation.css'
 import ContentEditable from "react-contenteditable";
 //import { useTable, usePagination } from 'react-table'
 import * as ReactBootStrap from "react-bootstrap";
 
+import { Link,withRouter } from "react-router-dom";
+import { connect } from "react-redux";
+import {
+    InvoiceData,
+    Quatation,
+  } from "../../store/data/action";
+  
 
 
 const Qutation = () => {
@@ -13,10 +21,6 @@ const Qutation = () => {
     const[state,setState]=useState({html: "NOTE /REMARK !"})
     const[price,setPrice]=useState("")
     const[address,setAddress]=useState({}) 
-    
-
- 
-  
     const Itmes1 = [
         { id: 1, Mode_transport: 'BY ROAD',  Total_number: 23, Total_gross:345 },
     ];
@@ -31,7 +35,30 @@ const Qutation = () => {
         setState({ html: e.target.value })
     }
     return (
-        <Container fluid className='bg'>
+       <div>
+        <Row>
+          <Col xl={12}>
+            <Card className="bg-secondary">
+              <CardBody>
+                <Row>
+                  <Col lg={6}>
+                    <h4 className="card-title mb-4 bgStyle">Invoice</h4>
+                  </Col>
+                  <Col lg={6}>
+                      <Link to="/import_quotation">
+                        <Button variant="warning" 
+                         className="mr-3"
+                          style={{float:"right"}} 
+                          >Quotation
+                        </Button>{' '}
+                      </Link>
+                  </Col>
+                </Row>
+                </CardBody>
+               </Card>
+               </Col>
+               </Row>
+               <Container fluid className='bg'>
             <div className='Header bg-success'>
                 <h2>Quotation</h2>
             </div>
@@ -184,7 +211,7 @@ const Qutation = () => {
             
            </Container>
            
-
+       </div>
     )
 }
 

@@ -14,6 +14,7 @@ import ImportLead from "../pages/LeadManagement/ImportLead";
 import Invoice from "../pages/Invoice/Invoice";
 import Quatation from "../pages/Invoice/Qutation";
 import Invoices from "../pages/Invoice/Invoices";
+import Quotations from "../pages/Quotation/Quotation";
 const authProtectedRoutes = [
   
   { path: "/leadManagement", component: LeadManagement },
@@ -23,6 +24,7 @@ const authProtectedRoutes = [
   { path: "/show_lead/:id", component: ShowLeads },
   {path: "/import_lead/",component: ImportLead},
   {path: "/import_invoice",component:Invoice},
+  {path:"/Quotations",component:Quotations},
   {path:"/import_quotation",component:Quatation},
   {path:"/import_invoices",component:Invoices},
   {path:"/login", component: Login,nav:true},

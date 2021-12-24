@@ -1,3 +1,45 @@
 .sizemin tr td {
     padding: 25px;
 }
+.bg2 {
+    background-image: url(img/img3.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+}
+.inputChange {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 300px;
+}
+.inputChange:link {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 400px;
+}
+.form_input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.data_last {
+    display: flex;
+    flex-direction: row;
+}
+.inputChange1 {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    width: 200px;
+}
+.LastCont {
+    margin-top: 25px;
+}
+.border0 {
+    border: none;
+    width: 400px;
+    background: transparent;
+}
