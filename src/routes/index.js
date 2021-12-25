@@ -24,7 +24,7 @@ const authProtectedRoutes = [
   { path: "/show_lead/:id", component: ShowLeads },
   {path: "/import_lead/",component: ImportLead},
   {path: "/import_invoice",component:Invoice},
-  {path:"/Quotations",component:Quotations},
+   {path:"/Quotations",component:Quotations},
   {path:"/import_quotation",component:Quatation},
   {path:"/import_invoices",component:Invoices},
   {path:"/login", component: Login,nav:true},
